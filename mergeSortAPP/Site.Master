@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="mergeSortAPP.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <meta charset="UTF-8">
+
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="/js/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <!--<script src="/js/jquery-1.10.2.min.js" type="text/javascript"></script>-->
+    <script src="/js/script.js" type="text/javascript"></script>
+</head>
+<body>
+    <form runat="server">
+    <div class="main">
+        <header>
+            <hgroup>
+                <h1 class="bold">
+                    MergeSortAPP
+                </h1>
+            </hgroup>
+        </header>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+    </div>
+    <footer>
+         <asp:ContentPlaceHolder ID="FooterContent" runat="server"/>
+    </footer>
+    </form>
+</body>
+</html>
